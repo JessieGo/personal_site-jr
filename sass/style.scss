@@ -1,0 +1,132 @@
+@import "normalize";
+
+// variables
+$primaryFont: Verdana, Georgia, sans-serif;
+$primaryColor: #10afa0;
+$navBarFontSize: 1.5rem;
+$socialIconWidth: 2.5rem;
+
+// mixins
+@mixin mediaQ($arg...) {
+  @if length($arg) ==1 {
+    @media screen and (min-width: nth($arg, 1)) {
+      @content;
+    }
+  }
+
+  @if length($arg) ==2 {
+    @media screen and (min-width: nth($arg,1)) and (max-width: nth($arg,2)) {
+      @content;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+  body {
+    font-family: $primaryFont;
+    // background-color: yellow;
+
+    //top bar styles
+    .nav {
+      width: 100%;
+      margin: 10px;
+      .navBar {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 1rem;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+        }
+
+        .navBar__name {
+          width: 14rem;
+          font-size: 2.5rem;
+        }
+
+        .navBar__pages {
+          padding: 1.5rem 0.5rem;
+          border-bottom: 1px solid lightgray;
+          font-size: $primaryFont;
+
+          a {
+            color: black;
+            font-size: $navBarFontSize;
+            display: block;
+
+            &:hover {
+              color: gray;
+            }
+          }
+        }
+        //push the social icon and menu to the right
+        .first {
+          margin-left: auto;
+        }
+
+        .navBar--right {
+          margin-right: 0.8rem;
+        }
+
+        .fab {
+          color: white;
+          background-color: $primaryColor;
+          text-align: center;
+          font-size: $navBarFontSize;
+          width: $socialIconWidth;
+          border-radius: $socialIconWidth/2;
+          padding: 0.5rem;
+          margin: 0.5rem;
+          transition: 0.25s;
+
+          &:hover {
+            background-color: transparent;
+            color: $primaryColor;
+          }
+        }
+        .navBar__toggle {
+          font-size: 2.5rem;
+          padding-left: 1rem;
+          &:hover {
+            color: gray;
+          }
+        }
+
+        //mobile and tablet view
+        .navBar--right {
+          order: 1;
+        }
+
+        .navBar__pages {
+          width: 100%;
+          text-align: center;
+          order: 2;
+          display: none;
+        }
+
+        //desktop view
+        @include mediaQ(798px) {
+          .navBar__pages {
+            width: 10%;
+            margin: auto;
+            display: inline-block;
+            order: 1;
+          }
+          .navBar__toggle {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
