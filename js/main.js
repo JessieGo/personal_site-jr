@@ -12,3 +12,10 @@ function toggleShow() {
     }
   }
 }
+
+// Show skill list btn
+showSkill = () => {
+  let skillList = document.querySelector(".about__skill-list");
+  if (skillList.style.display === "none") skillList.style.display = "flex";
+  else skillList.style.display = "none";
+};

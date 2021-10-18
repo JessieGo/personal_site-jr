@@ -1,0 +1,27 @@
+@use "sass:math";
+@import "base";
+@import "utilities";
+@import "components";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 2.5rem;
+
+  body {
+    font-family: $primaryFont;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      @import "./pages/nav";
+      @import "./pages/home";
+      @import "./pages/about";
+    }
+  }
+}

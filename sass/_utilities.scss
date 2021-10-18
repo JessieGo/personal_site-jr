@@ -1,0 +1,27 @@
+// variables
+$primaryFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//Verdana, Georgia, sans-serif;
+$primaryColor: #10afa0;
+$headingFontSizeXLarge: 4rem;
+$headingfontSizeLarge: 2.5rem;
+$headingfontSizeSmall: 2rem;
+$paraFontSize: 1.5rem;
+$navBarFontSize: 1.5rem;
+$socialIconWidth: 2.5rem;
+
+// mixins
+@mixin mediaQ($arg...) {
+  @if length($arg) ==1 {
+    @media screen and (min-width: nth($arg, 1)) {
+      @content;
+    }
+  }
+
+  @if length($arg) ==2 {
+    @media screen and (min-width: nth($arg,1)) and (max-width: nth($arg,2)) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+// containers
+
+.contain-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+//buttons
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  font-size: $navBarFontSize;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid black;
+  &:hover {
+    box-shadow: 5px 8px 8px #888888;
+  }
+  &:active {
+    transform: translateY(4px);
+  }
+}
+
+.button--primary {
+  color: white;
+  background-color: $primaryColor;
+  border-color: $primaryColor;
+  text-decoration: none;
+}
+
+.button--outline {
+  background-color: white;
+  border-color: $primaryColor;
+}
