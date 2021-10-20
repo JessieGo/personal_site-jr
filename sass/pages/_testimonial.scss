@@ -1,0 +1,49 @@
+.testimonial {
+  @include pageBorder;
+  background-color: rgb(209, 243, 229);
+  padding: 4rem;
+  margin-top: 3rem;
+  text-align: center;
+
+  &__header {
+    &__title {
+      font-size: $headingFontSizeXLarge;
+    }
+    &__para {
+      font-size: $paraFontSize;
+      margin: 2rem auto;
+    }
+  }
+  &__content {
+    &__list {
+      padding-bottom: 5rem;
+      &__slide {
+        i {
+          font-size: $headingFontSizeXLarge;
+          color: $primaryColor;
+          display: block;
+        }
+        img {
+          width: 20%;
+        }
+        &__para {
+          font-size: $paraFontSize;
+          font-style: italic;
+        }
+        .name {
+          font-size: small;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+// white page reserved for portfolio page
+.portfolio {
+  margin-top: 4rem;
+  text-align: center;
+  h2 {
+    font-size: $headingFontSizeXLarge;
+  }
+}

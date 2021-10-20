@@ -12,6 +12,7 @@
 html {
   font-size: 62.5%;
   line-height: 2.5rem;
+  overflow-x: hidden;
 
   body {
     font-family: $primaryFont;
@@ -22,6 +23,8 @@ html {
       @import "./pages/nav";
       @import "./pages/home";
       @import "./pages/about";
+      @import "./pages/service";
+      @import "./pages/testimonial";
     }
   }
 }

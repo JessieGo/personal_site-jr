@@ -14,16 +14,25 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  /> -->
+ 
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+   
+
   </head>
   <body>
-    <div class="container">
+    <div class="container">  
       <!-- Nav Bar -->
       <nav class="nav">
         <ul class="navBar">
           <li><h1 class="navBar__name">Judy Zhu</h1></li>
           <li class="navBar__pages"><a href="#section-home">Home</a></li>
           <li class="navBar__pages"><a href="#section-about">About</a></li>
-          <li class="navBar__pages"><a href="#">Service</a></li>
+          <li class="navBar__pages"><a href="#section-service">Service</a></li>
           <li class="navBar__pages"><a href="#">Blog</a></li>
           <li class="navBar__pages"><a href="#">Contact</a></li>
           <li class="navBar--side navBar__social-icon first">
@@ -45,9 +54,9 @@
       </nav>
       <div class="content">
         <!-- Home Page -->
-        <section id="section-home" class="home">
+        <section id="section-home" class="home container-page">
           <img
-            src="image/judy_profile1.jpeg"
+            src="image/judy_profile1_crop.png"
             alt="Judy's profile photo"
             class="home__side-image"
           />
@@ -58,12 +67,12 @@
               recusandae voluptatibus rerum officia aspernatur!
             </p>
             <div class="home__content__aboutme-link">
-              <a href="#section-about" class="btn button--primary">About Me</a>
+              <a href="#section-about" class="mybtn button--primary">About Me</a>
             </div>
           </div>
         </section>
         <!-- About Page -->
-        <section id="section-about" class="about">
+        <section id="section-about" class="about container-page">
           <div class="image__container">
             <div class="about__image">
               <img
@@ -91,11 +100,7 @@
               quia molestiae dolorum. Nulla quisquam adipisci sit excepturi!
             </p>
             <div class="about__content__show-skill">
-              <button
-                class="btn button--outline"
-                id="showSkillBtn"
-                onclick="showSkill()"
-              >
+              <button class="mybtn button--outline" id="showSkillBtn">
                 Show My Skill
               </button>
             </div>
@@ -119,8 +124,151 @@
             </div>
           </div>
         </section>
+        <!-- service Page -->
+        <section id="section-service" class="service">
+          <div class="service__header">
+            
+            <h2 class="service__header__title">Our Service</h2>
+            <p class="service__header__para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Excepturi, hic. Quos accusamus pariatur vel blanditiis veniam
+              commodi placeat qui expedita.
+            </p>
+          </div>
+          <ul class="service__list">
+            <li class="service__list__content">
+              <i class="service__list__content__icon fa fa-laptop id-color"></i>
+              <div class="service__list__content__text">
+                <h3 class="service__list__content__text__title">Website Design</h3>
+                <p class="service__list__content__text__para">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolores, ex.
+              </div>
+              </p>
+            </li>
+            <li class="service__list__content">
+              <i class="service__list__content__icon fa fa-line-chart id-color"></i>
+              <div class="service__list__content__text">
+                <h3 class="service__list__content__text__title">Digital Analytics</h3>
+                <p class="service__list__content__text__para">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolores, ex.
+              </div>
+              </p>
+            </li>
+            <li class="service__list__content">
+              <i class="service__list__content__icon fa fa-object-group id-color"></i>
+              <div class="service__list__content__text">
+                <h3 class="service__list__content__text__title">Email Marketing</h3>
+                <p class="service__list__content__text__para">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolores, ex.
+              </div>
+              </p>
+            </li>
+            <li class="service__list__content">
+              <i class="far fa-comments service__list__content__icon"></i>
+              <div class="service__list__content__text">
+                <h3 class="service__list__content__text__title">IT Consultancy</h3>
+                <p class="service__list__content__text__para">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolores, ex.
+              </div>
+              </p>
+            </li>
+          </ul>
+        </section>
+         <!-- Hire me now Page -->
+         <section class="hire">
+           <h2 class="hire__title">I am available for freelance</h2>
+           <a href="#section-about" class="hire__btn mybtn button--primary">Hire Me Now</a>
+         </section>
+
+        <!-- Testimonials Page -->
+        
+        <section id="section-Testimonial" class="testimonial container-page">
+          <div class="testimonial__header">
+            <h2 class="testimonial__header__title">Testimonials</h2>
+            <p class="testimonial__header__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+               Nisi deleniti delectus tenetur cupiditate voluptate 
+               enim possimus sequi dolorum?
+            </p>
+          </div>
+          <div  class="testimonial__content owl-carousel owl-theme">
+            <div id="myCarousel" class="testimonial__content__list carousel slide" data-ride="carousel">
+               <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <blockquote class="testimonial__content__list__slide testimonial__content">
+                    <i class="fas fa-quote-left"></i>
+                    <img src="image/head_image1.png" alt="client photo">
+                    <p class="testimonial__content__list__slide__para">
+                      I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi ut aliquip.
+                    </p>
+                    <p class="name">Sandra, Customer</p>
+                   </blockquote>
+                </div>
+                 <div class="item">
+                   <blockquote class="testimonial__content__list__slide testimonial__content">
+                    <i class="fas fa-quote-left"></i>
+                    <img src="image/head_image2.png" alt="client photo">
+                    <p class="testimonial__content__list__slide__para">
+                      I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi ut aliquip.
+                    </p>
+                    <p class="name">Sandra, Customer</p>
+                   </blockquote>
+                 </div>
+                 <div class="item">
+                   <blockquote class="testimonial__content__list__slide testimonial__content">
+                    <i class="fas fa-quote-left"></i>
+                    <img src="image/head_image1.png" alt="client photo">
+                    <p class="testimonial__content__list__slide__para">
+                      I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi ut aliquip.
+                    </p>
+                    <p class="name">Sandra, Customer</p>
+                   </blockquote>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- white page (reserved for portfolio)  -->
+        <section class="portfolio">
+          <h2>I Love what I Do</h2>
+        </section>
+
+        <!-- blog section -->
+        <section class="blog" id="section_blog">
+          <div class="blog__header">
+            <h2 class="blog__header__title">My Blog</h2>
+            <p class="blog__header__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa a distinctio ad eos est veritatis obcaecati autem error!</p>
+          </div>
+          <div class="blog__content">
+            div
+          </div>
+        </section>
       </div>
     </div>
+
   </body>
+  
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
 </html>

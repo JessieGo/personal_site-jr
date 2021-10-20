@@ -1,15 +1,16 @@
 // containers
 
-.contain-flex-column {
-  display: flex;
-  flex-direction: column;
+.container-page {
+  min-height: 100vh;
+  min-width: 100%;
 }
 
 //buttons
 
-.btn {
+.mybtn {
   padding: 1rem 2rem;
   border-radius: 0.4rem;
+  width: fit-content;
   font-size: $navBarFontSize;
   display: inline-block;
   text-align: center;

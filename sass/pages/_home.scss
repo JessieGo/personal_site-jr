@@ -1,23 +1,20 @@
 // home page
 
+// smaller view
 .home {
-  // background-color: lighten(gray, 11);
+  @include pageBorder;
+  background-color: #8a8b8d;
   overflow: hidden;
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom-left-radius: 50% 20%;
-  border-bottom-right-radius: 50% 20%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   position: relative;
-  padding-bottom: 10px;
+  //padding-bottom: 0px;
 
   &__side-image {
     min-width: 100%;
     max-height: 100vh;
-    object-fit: cover;
-    object-position: 100% 45%;
+    object-fit: contain;
   }
   &__content {
     display: flex;
@@ -31,6 +28,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #35404e;
+
     .home__content__heading {
       font-size: $headingFontSizeXLarge;
     }
@@ -39,6 +37,22 @@
     }
     .home__content__aboutme-link {
       text-align: center;
+    }
+  }
+}
+
+//larger view
+@include mediaQ(798px) {
+  .home {
+    display: flex;
+    &__side-image {
+      min-width: 50%;
+    }
+    &__content {
+      min-width: 40%;
+      top: 45%;
+      left: 65%;
+      transform: translate(-50%, -50%);
     }
   }
 }

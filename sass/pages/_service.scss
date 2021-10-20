@@ -1,0 +1,72 @@
+.service {
+  text-align: center;
+  color: white;
+  background-color: rgb(0, 132, 119);
+  padding: 4rem;
+  &__header {
+    &__title {
+      font-size: $headingFontSizeXLarge;
+    }
+    &__para {
+      font-size: $paraFontSize;
+      margin: 2rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      margin: 2.5rem;
+
+      &__icon {
+        font-size: $headingFontSizeXLarge;
+        color: lighten($primaryColor, $amount: 10);
+        border: solid 1px lighten($primaryColor, $amount: 10);
+        min-width: 8rem;
+        height: 8rem;
+        border-radius: 4rem;
+        padding: 2rem 0;
+        margin-right: 2rem;
+      }
+      &__text {
+        &__title {
+          font-size: $headingfontSizeSmall;
+        }
+        &__para {
+          font-size: $paraFontSize;
+        }
+      }
+    }
+  }
+  // larger view
+  @include mediaQ(798px) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      &__content {
+        max-width: 40%;
+      }
+    }
+  }
+}
+
+// hire me now section
+.hire {
+  padding: 2.5rem;
+  text-align: center;
+  // display: flex;
+  // flex-direction: column;
+
+  &__title {
+    font-size: $headingFontSizeXLarge;
+    margin: 3rem auto;
+    line-height: 48px;
+    letter-spacing: -1px;
+  }
+  &__btn {
+    margin: 1rem auto;
+  }
+}

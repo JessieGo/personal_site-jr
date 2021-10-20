@@ -12,6 +12,8 @@ $navBarFontSize: 1.5rem;
 $socialIconWidth: 2.5rem;
 
 // mixins
+
+// media query
 @mixin mediaQ($arg...) {
   @if length($arg) ==1 {
     @media screen and (min-width: nth($arg, 1)) {
@@ -24,4 +26,10 @@ $socialIconWidth: 2.5rem;
       @content;
     }
   }
+}
+
+//page border
+@mixin pageBorder {
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
 }

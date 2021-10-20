@@ -1,15 +1,13 @@
 //@use "sass:math";
 .nav {
   min-width: 100%;
-  margin: 10px;
-  //if position is fixed, the element will be pushed up in the z-index direction.
-  //position: fixed;
-  //top: 0;
+  margin: 2.5rem 0px;
+
   .navBar {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 1rem;
+    padding: 0px 1rem;
     align-items: center;
 
     a {
@@ -85,6 +83,12 @@
 
     //desktop view
     @include mediaQ(798px) {
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%; /* Full width */
+      z-index: 10;
+      background-color: #eee;
+
       .navBar__pages {
         width: 10%;
         margin: auto;
@@ -94,6 +98,7 @@
       .navBar__toggle {
         display: none;
       }
+      // }
     }
   }
 }
