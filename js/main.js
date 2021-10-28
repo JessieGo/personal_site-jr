@@ -30,24 +30,10 @@ showSkill = () => {
   });
 }
 
-//call the carousel
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel();
-});
+//Parallax Scrolling Effect
+window.addEventListener("scroll", () => {
+  const parallax = document.querySelector(".home__side-image");
+  let scrollPosition = window.scrollY;
 
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 3,
-    },
-    1000: {
-      items: 5,
-    },
-  },
+  parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
 });

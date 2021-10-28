@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
+
 // variables
-$primaryFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// $primaryFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+//   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+//   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 //Verdana, Georgia, sans-serif;
+// $headingFont: "Poppins", sans-serif;
+$primaryFont: "Poppins", sans-serif;
 $primaryColor: #10afa0;
 $headingFontSizeXLarge: 4rem;
 $headingfontSizeLarge: 2.5rem;
@@ -10,6 +14,7 @@ $headingfontSizeSmall: 2rem;
 $paraFontSize: 1.5rem;
 $navBarFontSize: 1.5rem;
 $socialIconWidth: 2.5rem;
+$darkBackgroundColor: rgb(0, 132, 119);
 
 // mixins
 

@@ -2,6 +2,8 @@
   // small view
   padding: 2.5rem;
   margin: 4rem 6rem;
+  align-items: center;
+  min-height: auto;
 
   &__image {
     position: relative;
@@ -27,7 +29,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
     &__heading {
@@ -57,19 +59,18 @@
   }
 }
 // larger view
+
 @include mediaQ(798px) {
   .about {
     display: flex;
     gap: 7rem;
     flex-wrap: wrap;
     justify-content: space-between;
-    // &__image {
-    //   min-width: 60%;
-    //   min-height: 70%;
-    // }
+    margin-bottom: 6rem;
+
     .image__container {
       max-width: 48%;
-      max-height: 70%;
+      min-height: 70%;
     }
 
     &__content {

@@ -1,0 +1,101 @@
+.blog {
+  // margin: 4rem 6rem;
+  background-color: $darkBackgroundColor;
+  color: white;
+  padding: 2rem 9rem;
+  // margin-top: 4rem;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin: 4rem;
+    &__title {
+      font-size: $headingFontSizeXLarge;
+    }
+    &__para {
+      font-size: $paraFontSize;
+    }
+  }
+
+  &__card {
+    text-decoration: none;
+    margin: 3rem 0;
+    overflow: hidden;
+
+    &__body {
+      position: relative;
+      // blog__card__body__text why cann't replace div with &__text
+      &:hover {
+        div {
+          opacity: 1;
+        }
+      }
+      &__img {
+        min-width: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+        z-index: -2;
+        display: block;
+      }
+      &__text {
+        display: flex;
+        justify-content: space-around;
+        border-top-right-radius: 4px;
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        width: 100%;
+        transition: 0.5s ease;
+        opacity: 0;
+        padding: 2rem;
+        text-align: center;
+      }
+    }
+    &__title {
+      padding: 2rem;
+      text-align: start;
+    }
+    &__para {
+      font-size: $paraFontSize;
+      text-align: start;
+    }
+  }
+}
+
+// middle view
+@include mediaQ(720px) {
+  .blog {
+    padding: 2rem 2rem;
+    .card-wrapper {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .blog__card {
+        max-width: 45%;
+        //max-height: 30rem;
+        overflow: hidden;
+        &__body {
+          max-height: 60%;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+// large view
+@include mediaQ(1080px) {
+  .card-wrapper {
+    .blog__card {
+      //   max-width: 30%; // dont know why it cann't be min-width
+      width: 30%;
+      &__body {
+        max-height: 60%;
+        overflow: hidden;
+      }
+    }
+  }
+}

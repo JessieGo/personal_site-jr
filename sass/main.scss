@@ -2,6 +2,7 @@
 @import "base";
 @import "utilities";
 @import "components";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -25,6 +26,7 @@ html {
       @import "./pages/about";
       @import "./pages/service";
       @import "./pages/testimonial";
+      @import "./pages/blog";
     }
   }
 }
