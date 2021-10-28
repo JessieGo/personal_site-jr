@@ -1,0 +1,11 @@
+.contact {
+  background-color: blue;
+  &__header {
+    &__title {
+      font-size: $headingFontSizeXLarge;
+    }
+    &__para {
+      font-size: $paraFontSize;
+    }
+  }
+}
