@@ -1,11 +1,95 @@
 .contact {
-  background-color: blue;
+  font-family: $primaryFont;
+  font-size: $paraFontSize;
   &__header {
     &__title {
       font-size: $headingFontSizeXLarge;
     }
     &__para {
       font-size: $paraFontSize;
+      padding: 2rem;
+    }
+  }
+  &__form {
+    text-align: left;
+    margin-top: 2rem;
+    form {
+      margin: 0 auto;
+      max-width: 60rem;
+    }
+    &__start {
+      @include flexColumn;
+    }
+    &__end {
+      @include flexColumn;
+    }
+    label {
+      padding: 1rem;
+    }
+    input:not(.mybtn),
+    textarea {
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.5);
+      // box-shadow: none;
+      font-weight: 400;
+      font-size: 15px;
+      border-radius: 4px;
+      border: 1px solid #ced4da;
+    }
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: $primaryColor;
+    }
+
+    input[type="submit"] {
+      margin: 2rem auto;
+      width: 13rem;
+      display: block;
+    }
+  }
+  &__content {
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+    &__method {
+      display: flex;
+      flex-flow: column wrap;
+      gap: 1.5rem;
+      i {
+        color: $primaryColor;
+        font-size: 3.5rem;
+      }
+      &__text {
+        color: $primaryColor;
+      }
+    }
+  }
+
+  // larger view
+  @include mediaQ(798px) {
+    &__form {
+      form {
+        max-width: 100rem;
+        // margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 2rem;
+
+        textarea {
+          height: 21rem;
+        }
+      }
+      &__start,
+      &__end {
+        min-width: 40%;
+      }
+      &__btn {
+        min-width: 80%;
+      }
     }
   }
 }

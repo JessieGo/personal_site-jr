@@ -38,3 +38,8 @@ $darkBackgroundColor: rgb(0, 132, 119);
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
 }
+
+@mixin flexColumn {
+  display: flex;
+  flex-flow: column wrap;
+}

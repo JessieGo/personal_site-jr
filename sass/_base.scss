@@ -1,3 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 2.5rem;
+  overflow-x: hidden;
+  // box-sizing: border-box;
+  // margin: 0;
+  // padding: 0;
+}
+
+body {
+  font-family: $primaryFont;
+}
+
+h2 {
+  font-size: $headingFontSizeXLarge;
+}
+
+p {
+  font-size: $paraFontSize;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -40,14 +67,6 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-
-h2 {
-  font-size: $headingFontSizeXLarge;
-}
-
-p {
-  font-size: $paraFontSize;
 }
 
 /* Grouping content

@@ -1,33 +1,14 @@
 @use "sass:math";
-@import "base";
 @import "utilities";
 @import "components";
+@import "base";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-  line-height: 2.5rem;
-  overflow-x: hidden;
-
-  body {
-    font-family: $primaryFont;
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      @import "./pages/nav";
-      @import "./pages/home";
-      @import "./pages/about";
-      @import "./pages/service";
-      @import "./pages/testimonial";
-      @import "./pages/blog";
-      @import "./pages/contact";
-    }
-  }
-}
+@import "./pages/nav";
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/service";
+@import "./pages/testimonial";
+@import "./pages/blog";
+@import "./pages/contact";
+@import "./pages/footer";
