@@ -9,7 +9,7 @@
     }
     &__para {
       font-size: $paraFontSize;
-      margin: 2rem;
+      //margin: 2rem;
     }
   }
 
@@ -46,6 +46,7 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-around;
       &__content {
         max-width: 40%;
       }

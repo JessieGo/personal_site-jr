@@ -44,23 +44,6 @@
       margin-right: 0.8rem;
     }
 
-    .fab {
-      color: white;
-      background-color: $primaryColor;
-      text-align: center;
-      font-size: $navBarFontSize;
-      width: $socialIconWidth;
-      border-radius: $socialIconWidth/2;
-      // border-radius: math.div($socialIconWidth, 2);
-      padding: 0.5rem;
-      margin: 0.5rem;
-      transition: 0.25s;
-
-      &:hover {
-        background-color: transparent;
-        color: $primaryColor;
-      }
-    }
     .navBar__toggle {
       font-size: 2.5rem;
       padding-left: 1rem;

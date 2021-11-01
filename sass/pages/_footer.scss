@@ -1,5 +1,18 @@
 .footer {
   background: #35404e;
   color: #ffffff;
-  padding: 40 px 0 40 px 0;
+  padding: 4rem 2rem;
+  &__text {
+    margin: 2rem auto 2rem 1rem;
+  }
+  &__social {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  @include mediaQ(798px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -91,5 +91,17 @@
         min-width: 80%;
       }
     }
+    &__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      div:nth-of-type(1) {
+        flex-basis: 20rem;
+      }
+      &__method {
+        padding: 2rem;
+      }
+    }
   }
 }
