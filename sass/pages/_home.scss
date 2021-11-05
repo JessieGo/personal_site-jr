@@ -3,7 +3,8 @@
 // smaller view
 .home {
   @include pageBorder;
-  background-color: #8a8b8d;
+  //background-color: #8a8b8d;
+  background-color: #d1f3e5;
   overflow: hidden;
   // display: flex;
   // flex-direction: column;
@@ -28,13 +29,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #35404e;
+    text-align: start;
 
     .home__content__heading {
-      font-size: $headingFontSizeXLarge;
+      font-style: italic;
+      font-weight: bold;
     }
-    .home__content__para {
-      font-size: $paraFontSize;
-    }
+
     .home__content__aboutme-link {
       text-align: center;
     }

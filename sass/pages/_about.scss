@@ -1,6 +1,6 @@
 .about {
   padding: 2.5rem;
-  margin: 4rem 6rem;
+  // margin: 4rem 6rem;
   align-items: center;
   min-height: auto;
 
@@ -36,6 +36,7 @@
     }
     &__para {
       font-size: $paraFontSize;
+      text-align: start;
     }
   }
   &__skill-list {

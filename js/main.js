@@ -37,3 +37,17 @@ window.addEventListener("scroll", () => {
 
   parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
 });
+
+// navbar active page
+(() => {
+  const pages = document.querySelectorAll(".nav-page");
+
+  pages.forEach((page) => {
+    page.addEventListener("click", () => {
+      pages.forEach((page) => {
+        page.classList.remove("active");
+      });
+      page.classList.add("active");
+    });
+  });
+})();

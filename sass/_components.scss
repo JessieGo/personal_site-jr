@@ -21,8 +21,10 @@
   text-align: center;
   transition: 0.3s;
   border: 1px solid black;
+  box-shadow: 5px 8px 8px #888888;
   &:hover {
     box-shadow: 5px 8px 8px #888888;
+    background-color: lighten($color: $primaryColor, $amount: 5);
   }
   &:active {
     transform: translateY(4px);
@@ -57,4 +59,13 @@
     background-color: transparent;
     color: $primaryColor;
   }
+}
+
+//animation
+.animate__animated {
+  animation-duration: 4s;
+}
+
+.txt--align__start {
+  text-align: start;
 }

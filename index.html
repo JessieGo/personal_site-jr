@@ -14,6 +14,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
   </head>
@@ -23,22 +27,40 @@
       <nav class="nav">
         <ul class="navBar">
           <li><h1 class="navBar__name">Judy Zhu</h1></li>
-          <li class="navBar__pages"><a href="#section-home">Home</a></li>
-          <li class="navBar__pages"><a href="#section-about">About</a></li>
-          <li class="navBar__pages"><a href="#section-service">Service</a></li>
-          <li class="navBar__pages"><a href="#section-blog">Blog</a></li>
-          <li class="navBar__pages"><a href="#">Contact</a></li>
+          <li class="navBar__pages active">
+            <a href="#section-home" class="nav-page">Home</a>
+          </li>
+          <li class="navBar__pages">
+            <a href="#section-about" class="nav-page"> About</a>
+          </li>
+          <li class="navBar__pages">
+            <a href="#section-service" class="nav-page">Service</a>
+          </li>
+          <li class="navBar__pages">
+            <a href="#section-blog" class="nav-page">Blog</a>
+          </li>
+          <li class="navBar__pages">
+            <a href="#section-contact" class="nav-page">Contact</a>
+          </li>
           <li class="navBar--side navBar__social-icon first">
-            <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
+            <a href="#" ref="noopener noreferrer"
+              ><i class="fab fa-facebook-f social-icon"></i
+            ></a>
           </li>
           <li class="navBar--side navBar__social-icon">
-            <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+            <a href="#" ref="noopener noreferrer"
+              ><i class="fab fa-twitter social-icon"></i
+            ></a>
           </li>
           <li class="navBar--side navBar__social-icon">
-            <a href="#"><i class="fab fa-linkedin-in social-icon"></i></a>
+            <a href="#" ref="noopener noreferrer"
+              ><i class="fab fa-linkedin-in social-icon"></i
+            ></a>
           </li>
           <li class="navBar--side navBar__social-icon">
-            <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+            <a href="#" ref="noopener noreferrer"
+              ><i class="fab fa-instagram social-icon"></i
+            ></a>
           </li>
           <li class="navBar--side navBar__toggle" onclick="toggleShow()">
             <i class="fas fa-bars"></i>
@@ -49,18 +71,34 @@
         <!-- Home Page -->
         <section id="section-home" class="home container-page">
           <img
-            src="image/judy_profile1_crop.png"
+            src="image/judy_profile2-removebg.png"
             alt="Judy's profile photo"
             class="home__side-image"
           />
           <div class="home__content">
-            <h2 class="home__content__heading">Hello I am Judy</h2>
-            <p class="home__content__para">
+            <h2
+              class="home__content__heading animate__animated animate__fadeInUp"
+            >
+              Hello My Name Is Judy
+            </h2>
+            <p
+              class="
+                home__content__para
+                animate__animated animate__fadeInUp
+                txt--align__start
+              "
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto id
               recusandae voluptatibus rerum officia aspernatur!
             </p>
             <div class="home__content__aboutme-link">
-              <a href="#section-about" class="mybtn button--primary"
+              <a
+                href="#section-about"
+                class="
+                  mybtn
+                  button--primary
+                  animate__animated animate__fadeInUp
+                "
                 >About Me</a
               >
             </div>
@@ -73,20 +111,26 @@
               <img
                 src="image/judy_profile1_landscape.jpeg"
                 alt="Judy's photo"
-                class="about__image__first"
+                class="
+                  about__image__first
+                  animate__animated animate__fadeInRight
+                "
               />
               <img
                 src="image/judy_profile2_landscape.jpeg"
                 alt="Judy's second photo"
-                class="about__image__second"
+                class="
+                  about__image__second
+                  animate__animated animate__fadeInRight
+                "
               />
             </div>
           </div>
-          <div class="about__content">
+          <div class="about__content animate__animated animate__fadeInUp">
             <h2 class="about__content__heading">
               About <span style="color: #10afa0">Me</span>
             </h2>
-            <p class="about__content__para">
+            <p class="about__content__para txt--align__start">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iure
               eaque obcaecati distinctio maiores est ad, incidunt voluptas, odit
               molestias aperiam quam aspernatur! Corrupti impedit ullam aut.
@@ -131,7 +175,12 @@
             </p>
           </div>
           <ul class="service__list">
-            <li class="service__list__content">
+            <li
+              class="
+                service__list__content
+                animate__animated animate__fadeInRight
+              "
+            >
               <i class="service__list__content__icon fa fa-laptop id-color"></i>
               <div class="service__list__content__text">
                 <h3 class="service__list__content__text__title">
@@ -143,7 +192,12 @@
                 </p>
               </div>
             </li>
-            <li class="service__list__content">
+            <li
+              class="
+                service__list__content
+                animate__animated animate__fadeInRight
+              "
+            >
               <i
                 class="service__list__content__icon fa fa-line-chart id-color"
               ></i>
@@ -157,7 +211,12 @@
                 </p>
               </div>
             </li>
-            <li class="service__list__content">
+            <li
+              class="
+                service__list__content
+                animate__animated animate__fadeInRight
+              "
+            >
               <i
                 class="service__list__content__icon fa fa-object-group id-color"
               ></i>
@@ -171,7 +230,12 @@
                 </p>
               </div>
             </li>
-            <li class="service__list__content">
+            <li
+              class="
+                service__list__content
+                animate__animated animate__fadeInRight
+              "
+            >
               <i class="far fa-comments service__list__content__icon"></i>
               <div class="service__list__content__text">
                 <h3 class="service__list__content__text__title">
@@ -438,16 +502,24 @@
           <p class="footer__text">© Copyright 2021 - Judy by Jessie Liu</p>
           <ul class="footer__social">
             <li class="footer__social__icon">
-              <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
+              <a href="#" ref="noopener noreferrer"
+                ><i class="fab fa-facebook-f social-icon"></i
+              ></a>
             </li>
             <li class="footer__social__icon">
-              <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+              <a href="#" ref="noopener noreferrer"
+                ><i class="fab fa-twitter social-icon"></i
+              ></a>
             </li>
             <li class="footer__social__icon">
-              <a href="#"><i class="fab fa-linkedin-in social-icon"></i></a>
+              <a href="#" ref="noopener noreferrer"
+                ><i class="fab fa-linkedin-in social-icon"></i
+              ></a>
             </li>
             <li class="footer__social__icon">
-              <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+              <a href="#" ref="noopener noreferrer"
+                ><i class="fab fa-instagram social-icon"></i
+              ></a>
             </li>
           </ul>
         </footer>

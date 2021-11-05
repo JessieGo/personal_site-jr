@@ -2,7 +2,7 @@
   // margin: 4rem 6rem;
   background-color: $darkBackgroundColor;
   color: white;
-  padding: 2rem 9rem;
+  padding: 2rem 2rem;
   // margin-top: 4rem;
 
   &__header {
@@ -24,6 +24,7 @@
     overflow: hidden;
 
     &__body {
+      border-radius: 4px;
       position: relative;
       // blog__card__body__text why cann't replace div with &__text
       &:hover {
@@ -34,8 +35,7 @@
       &__img {
         min-width: 100%;
         object-fit: cover;
-        border-radius: 10px;
-        // z-index: -2;
+
         display: block;
       }
       &__text {
