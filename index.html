@@ -432,7 +432,11 @@
             </p>
           </div>
           <div class="contact__form">
-            <form action="">
+            <form
+              id="my-form"
+              action="https://formspree.io/f/mgerjrjb"
+              method="POST"
+            >
               <div class="contact__form__start">
                 <label for="name">Name</label>
                 <input
@@ -473,8 +477,10 @@
                   type="submit"
                   value="Submit"
                   class="mybtn button--primary"
+                  id="my-form-button"
                 />
               </div>
+              <p id="my-form-status"></p>
             </form>
           </div>
           <div class="contact__content">

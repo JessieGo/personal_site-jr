@@ -26,11 +26,11 @@
     &__body {
       border-radius: 4px;
       position: relative;
-      // blog__card__body__text why cann't replace div with &__text
-      &:hover {
-        div {
-          opacity: 1;
-        }
+      // when &__body is hovered, &__text will change
+      &:hover &__text {
+        //div {
+        opacity: 1;
+        // }
       }
       &__img {
         min-width: 100%;
